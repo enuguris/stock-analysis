@@ -39,3 +39,4 @@ def get_scripid():
   cnx.close()
 
 get_scripid()
+os.system("mysql -u senuguri -pnaafavorite -D nse -e \"LOAD DATA LOCAL INFILE 'results.csv' INTO TABLE nse_data FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (scrip_id,trad_day,oprice,high,low,cprice,vol);\"")

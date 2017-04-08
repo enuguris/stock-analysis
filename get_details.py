@@ -8,7 +8,7 @@ import datetime
 
 def format_tday(arg):
   month_dic = { 'Jan':'01', 'Feb':'02', 'Mar':'03', 'Apr':'04', 'May':'05', 'Jun': '06', 'Jul':'07', 'Aug':'08', 'Sep':'09', 'Oct':'10', 'Nov':'11', 'Dec':'12' }
-  
+ 
   for x in arg:
     m = re.search(r'(.*) (.*),.*', x)
     if m:
@@ -17,7 +17,7 @@ def format_tday(arg):
         day = m.group(2)
         now = datetime.datetime.now()
         year = str(now.year)
-        if day == str(now.day-1):
+        if int(day) == now.day or int(day) == now.day-1:
           return year+month+day
       except KeyError:
         return '000000'
