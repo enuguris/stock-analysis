@@ -3,7 +3,7 @@
 import mysql.connector
 from mysql.connector import Error
 
-config = {'user': 'root', 'password': 'naafavorite', 'host': '127.0.0.1', 'database': 'nse'}
+config = {'user': 'root', 'password': '******', 'host': '127.0.0.1', 'database': 'nse'}
 
 
 def get_nseid(symbol):

@@ -8,7 +8,7 @@ flags = [ClientFlag.LOCAL_FILES]
 def load_csv_into_table():
   config = {
     'user': 'root',
-    'password': 'naafavorite',
+    'password': '**********',
     'host': '127.0.0.1',
     'database': 'nse' }
 
